@@ -8,6 +8,7 @@
     form.addEventListener('submit',(event) => {
 
         Control.checkIsRequired([username,email,password,repasssword]);
+        Control.chekIsEmail(email);
 
         event.preventDefault();
     });
