@@ -26,5 +26,11 @@
             input.value.length > max && UI.error(input,`${input.id} is max characters ${max}`);
         }
         
+        static checkIsPassword(password,repasssword)
+        {
+            password.value !== repasssword.value && UI.error(repasssword,`${repasssword.id} isn't correct `); 
+        }
+
+    
 
     }

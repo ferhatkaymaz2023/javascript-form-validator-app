@@ -12,6 +12,7 @@
         Control.checkIsLength(username,4,21);
         Control.checkIsLength(password,8,21);
         Control.checkIsLength(repasssword,8,21);
+        Control.checkIsPassword(password,repasssword);
 
         event.preventDefault();
     });
