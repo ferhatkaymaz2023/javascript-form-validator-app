@@ -20,4 +20,11 @@
             }
         }
 
+        static checkIsLength(input,min,max)
+        {
+            input.value.length < min && UI.error(input,`${input.id} is min characters ${min}`);
+            input.value.length > max && UI.error(input,`${input.id} is max characters ${max}`);
+        }
+        
+
     }

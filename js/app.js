@@ -9,6 +9,9 @@
 
         Control.checkIsRequired([username,email,password,repasssword]);
         Control.chekIsEmail(email);
+        Control.checkIsLength(username,4,21);
+        Control.checkIsLength(password,8,21);
+        Control.checkIsLength(repasssword,8,21);
 
         event.preventDefault();
     });
